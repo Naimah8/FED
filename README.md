@@ -161,10 +161,10 @@ hfbbhjebhjbrbfhjbef
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - geleerd over meerdere fontfaces toevoegen.
+  - geleerd over grid 
+  - geleerd over een caro met pijltjes
+  - geleerd dat ik voor bepaalde dingen wel margin en padding mag gebruiken.
 
 </details>
 
@@ -178,17 +178,19 @@ hfbbhjebhjbrbfhjbef
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Wat ging goed: ik heb geleerd hoe ik grid moet gebruiken op de juiste manier, en dit toegepast op de gehele website. Het gebruiken van margin op de website ging ook heel goed. Wat ik fijn vond is het werken met de verschillende style sheets hierdoor blijft de code voor mij overzichtelijk.
+
+wat ging minder goed: het toepassen van de light en darkmode vond ik erg lastig. Ook had ik moeite met de padding op de home pagina. De eerste en de tweede section een andere layout geven met de @media vond ik lastg, maar ben er uiteindelijk wel uitgekomen.
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Daniel         | Jasmijn            | Naimah           |
+  |text positioneren| responsiveness     | responsiveness       | ---              |
+  | video croppen  | en dit              | padding op de pagina |    |
+  | header verdwijnt       | dit als er tijd is | light and darkmode |
+  |grid in mijn footer?                  | grid in de footer
 
 
   ### Verslag van meeting
