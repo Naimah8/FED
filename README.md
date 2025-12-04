@@ -232,11 +232,14 @@ wat ging minder goed: het toepassen van de light en darkmode vond ik erg lastig.
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+Naimah:
+-Hoe zet ik de sneeuw uit bij light-mode.
+-Welke selector gebruik ik om ruimte te geven tussen de summary.
+-Hoe zet ik de pijltjes naar de andere kant (summary).
+-hoe zet ik een a of tekst over mijn afbeelding?
+-is het beter om footer nav, header nav enz te gebruiken of nav:nth-of-type
+-wat is de juiste selector voor mijn sticky nav?
+
 
 
   ### Verslag van meeting

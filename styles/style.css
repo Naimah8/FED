@@ -75,7 +75,7 @@
   span.lightmode {
     display: none;
   }
-  
+
   header {
 	background-color: var(--color-header);
 	height: 4em;
@@ -130,15 +130,15 @@
     text-decoration: none;
   }
 
-nav.toonMenu ul {
+header nav.toonMenu ul {
 	translate:0% 0%;
   }
 
-  nav.toonMenu button img {
+  header nav.toonMenu button img {
 	content:url(https://assets.codepen.io/274456/ui-icon-cross.svg);
   }
 
-  nav button img {
+  header nav button img {
 	content: url(https://assets.codepen.io/274456/ui-icon-hamburger.svg);
   }
 
@@ -154,7 +154,7 @@ nav.toonMenu ul {
         height:0;
         
   }
-	nav button {
+	header nav button {
 		display: none;
   }
   }
@@ -172,16 +172,18 @@ nav.toonMenu ul {
 footer { 
 background-color: var(--color-footer);
   padding:1em;
-	height: 50em;
+	height: 30em;
   display:grid;
-  grid-template-columns:1fr 1fr 1fr 1fr;
-  grid-template-rows:auto auto auto auto;
+  grid-template-columns:auto 1fr 1fr 1fr;
+  grid-template-rows:0.4fr 0.5fr 0.6fr auto;
   color: #f7f7f7;
+  font-family: "Starbucks";
+  font-weight: 350;
+  font-size: 0.7em;
 
 }
-
 footer img {
-	max-width: 3em;
+  max-width: 3em;
   grid-column: 1;
   grid-row: 1;
 }
@@ -194,14 +196,17 @@ footer nav {
 }
 
 footer div{
-  max-width:0.5em;
-  color: #ffffff;
   grid-column: 1;
   grid-row: 4;
   display:flex;
   flex-direction:row;
   gap:2em
 }
+
+footer div img{
+  max-width: 1.5em;
+}
+
 
 footer ul{
   grid-row:3;
@@ -211,10 +216,22 @@ footer ul{
 
 footer li{
   margin-bottom:1em;
+  opacity: 50%;
 }
 
 footer a {
   color: var(--color-text-white);
+  text-decoration: none;
+}
+
+body > nav:last-of-type  {
+  position: sticky;
+	bottom: 0;
+	width: 100%;
+	background: white;
+	z-index: 999;
+  display:grid;
+  grid-template-columns: 2fr 1fr;
 }
 
 

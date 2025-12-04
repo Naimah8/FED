@@ -1,1 +1,14 @@
 /* main onzekoffie */
+section:nth-last-of-type(1) a {
+    background-color: var(--color-button-white);
+    border-radius: 5em;
+    text-align: center;
+    color: var(--color-text-black);
+    text-decoration: none;
+    padding: 0.78em;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 4em;
+    font-size: 0.7em;
+    grid-row-start:4;
+}
