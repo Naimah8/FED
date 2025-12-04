@@ -17,21 +17,43 @@
   /*********************/
   /* CUSTOM PROPERTIES */
   /*********************/
-  :root {
-	  /* startje */
-	  color-scheme: light dark;
-	  --color-text-black: light-dark(#000000, #ffffff);
-	  --color-text-white:light-dark(#ffffff,#000000);
-	  --color-background-green:light-dark(#006242, #fdf4e3);
+
+
+    
+  :root{
+    --color-text-black: #000000;
+	  --color-text-white: #ffffff;
+	  --color-background-green:#006242;
 	  --color-button-green:#006242;
-	  --color-button-white:light-dark(#ffffff, #006242);
-	  --color-background-white:light-dark(#ffffff,#430202);
-	  --color-background-grey:light-dark(#f7f7f7,#023701f0);
-      --color-background-lightgreen:light-dark(#01754b, #fdf4e3);
+	  --color-button-white:#ffffff;
+	  --color-background-white: #ffffff;
+	  --color-background-grey:#f7f7f7;
+      --color-background-lightgreen:#01754b;
 	  --color-focus:#ff0000;
-	  --color-footer:light-dark(#1e3932, #006224);
-	  --color-header:light-dark(#ffffff, #006224);
+	  --color-footer:#1e3932;
+	  --color-header:#ffffff;
+
   }
+
+  @media (prefers-color-scheme: dark) {
+    
+    :root{
+    --color-text-black: #ffffff;
+	  --color-text-white: #000000;
+	  --color-background-green:#006242;
+	  --color-button-green:#006242;
+	  --color-button-white:#ffffff;
+	  --color-background-white: #430202;
+	  --color-background-grey:#023701f0;
+    --color-background-lightgreen:#fdf4e3;
+	  --color-focus:#ff0000;
+	  --color-footer:#006224;
+	  --color-header:#006224;
+
+    }
+
+  }
+  
 
 /*********************/
 /*****algemeen********/
@@ -50,7 +72,10 @@
   /* JOUW STYLING */
   /****************/
   
-
+  span.lightmode {
+    display: none;
+  }
+  
   header {
 	background-color: var(--color-header);
 	height: 4em;
@@ -89,7 +114,6 @@
 	bottom:0;
 	translate:100% 0%;
 	transition:translate .3s;
-	padding-top: 4em;
   list-style: none;
 
 
@@ -122,21 +146,14 @@ nav.toonMenu ul {
   header nav ul:nth-of-type(1){
 		display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: start;
         gap: 0.5em;
-		background-color: #ff0000;
-
-        /* FIXES */
-        position: static;      /* niet fullscreen */
-        translate: 0 0;        /* menu weer zichtbaar */
-        background: none;      /* rood scherm weghalen */
-        height: auto; 
-		width: auto;
-        height: auto;
-        padding: 0;
-        margin: 0;         /* geen gekke hoogte */
-        list-style: none; 
-    }
+        list-style: none;
+        position: static;
+        translate: 0 0;
+        height:0;
+        
+  }
 	nav button {
 		display: none;
   }
@@ -202,6 +219,7 @@ footer a {
 
 
 /* @media (prefers-color-scheme: dark){
+
+
 	
-} */
 

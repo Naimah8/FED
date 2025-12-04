@@ -14,6 +14,9 @@ function toggleMenu() {
 }
 
 
+if (window.matchMedia) {
+    // Check if the dark-mode Media-Query matches
+    if(window.matchMedia('(prefers-color-scheme: dark)').matches){
 
 
 // Amount of Snowflakes
@@ -110,3 +113,10 @@ for (i = 0; i <= snowMax; i++) {
 
 window.addEventListener('resize', resize);
 window.addEventListener('load', initSnow);
+
+
+    }
+} else {
+    span.classlist.add('lightmode');
+    
+}
