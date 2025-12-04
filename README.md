@@ -187,11 +187,10 @@ wat ging minder goed: het toepassen van de light en darkmode vond ik erg lastig.
   samen met je groepje opstellen
 
   | Daniel         | Jasmijn            | Naimah           |
-  |text positioneren| responsiveness     | responsiveness       | ---              |
-  | video croppen  | en dit              | padding op de pagina |    |
-  | header verdwijnt       | dit als er tijd is | light and darkmode |
-  |grid in mijn footer?                  | grid in de footer
-
+  |                 | responsiveness    | responsiveness       | ---              |
+  |                 | text positioneren | padding op de pagina |    |
+  |                 | video croppen     | light and darkmode |
+  |                 | grid in de footer
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen

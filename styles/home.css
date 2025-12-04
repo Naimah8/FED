@@ -47,59 +47,41 @@
   }
 
 
-  
-  /*********************/
-  /* CUSTOM PROPERTIES */
-  /*********************/
-  :root {
-	  /* startje */
-	  --color-text-black:#000000;
-	  --color-text-white:#ffff; 
-	  --color-background-green:#006242;
-	  --color-button-green:#006242;
-	  --color-button-white:#ffff;
-	  --color-background-white:#ffff;
-      --color-background-grey:#f7f7f7;
-      --color-background-lightgreen:#01754b;
-  }
-
-
-
-
-
-
   main {
     margin:0;
     padding:0;
     list-style-type:"";
     display:grid;
-    grid-template-columns:1fr;
-    gap:1em;
-    padding: 0.9em;
+    grid-template-columns:1fr;;
+    background-color: var(--color-background-white);
+    /* background-image:linear-gradient(180deg in hsl, #590202, #971717, #b92424); */
   }
 
   @media (min-width: 1024px) { 
     main {
       grid-template-columns: repeat(2, 1fr);
       padding: 4em;
+      gap:1em;
     }
   }
+
 /* Snap ik niet zo goed (chatgpt)*/
 
 /*********************/
 /******SECTION 1******/
 /*********************/
 
-section:nth-of-type(1) { /* snap ik niet zo goed */
+section:nth-of-type(1) { 
 	background-color:var(--color-background-green);
 	display: flex;
     flex-direction: column;
     gap: 1em;
     height: auto;
-    width: 100%;/* dit snap ik niet helemaal */
+    width: 100%;
     grid-column: 1 / -1;/* dit snap ik niet helemaal */
   }
-  /* snap ik niet zo goed, maar laat de eerste section niet mee bewegen met de @media*/
+
+
 
   section:nth-of-type(1) h1 {
 	font-family: "Starbucks";
@@ -112,7 +94,7 @@ section:nth-of-type(1) { /* snap ik niet zo goed */
 
   section:nth-of-type(1) a {
 	background: var(--color-button-white);
-	border-radius: 100em;
+	border-radius: 10em;
 	font-size: 70%;
     text-align: center;
 	font-family: "Starbucks";
@@ -133,6 +115,33 @@ section:nth-of-type(1) { /* snap ik niet zo goed */
 	max-width:100%;
 }
 
+@media (width > 1024px) { 
+    section:nth-of-type(1)  {
+        display: grid;
+        grid-template-columns:16em 1fr;
+        grid-template-rows: 1fr 1fr;
+        border-radius:0.5em;
+
+    }
+
+    section:nth-of-type(1) h1 {
+        align-self: end;
+        justify-self: start;
+
+    }
+    section:nth-of-type(1) a {
+        align-self: start;
+        justify-self: start;
+
+    }
+    section:nth-of-type(1) img {
+        grid-column-start: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        border-radius:0.5em;
+    }
+}
+
 /*********************/
 /******SECTION 2******/
 /*********************/
@@ -141,8 +150,9 @@ section:nth-of-type(2){
     background-color:var(--color-background-grey);
     display: flex;
     flex-direction: column;
-    border-radius: 0.2em;
+    border-radius: 0.3em;
     font-family: "Starbucks";
+    margin:1em;
 
 }
 
@@ -155,7 +165,7 @@ section:nth-of-type(2){
     
 
 section:nth-of-type(2) img {
-    border-radius: 0.2em;
+    border-radius: 0.3em;
     grid-row-start:1;
     grid-column-start:1;
     grid-column-end:3;
@@ -200,6 +210,13 @@ section:nth-of-type(2) a {
 
 }
 
+@media (width > 1024px) { 
+    section:nth-of-type(2)  {
+        margin: 0;
+        margin-top: 3em;
+    }
+}
+
 /*********************/
 /******SECTION 3******/
 /*********************/
@@ -208,8 +225,9 @@ section:nth-of-type(3){
     background-color:var(--color-background-lightgreen);
     display: flex;
     flex-direction: column;
-    border-radius: 0.2em;
+    border-radius: 0.3em;
     font-family: "Starbucks";
+    margin: 1em;
 
 }
 
@@ -221,7 +239,7 @@ section:nth-of-type(3){
     
 
 section:nth-of-type(3) img {
-    border-radius: 0.2em;
+    border-radius: 0.3em;
     grid-row-start:1;
     grid-column-start:1;
     grid-column-end:3;
@@ -264,6 +282,13 @@ section:nth-of-type(3) a {
     grid-row-start:4;
 }
 
+@media (width > 1024px) { 
+    section:nth-of-type(3)  {
+        margin: 0;
+        margin-top: 3em;
+    }
+}
+
 /*********************/
 /******SECTION 4******/
 /*********************/
@@ -272,8 +297,9 @@ section:nth-of-type(4){
     background-color:var(--color-background-grey);
     display: flex;
     flex-direction: column;
-    border-radius: 0.2em;
+    border-radius: 0.3em;
     font-family: "Starbucks";
+    margin: 1em;
 
 }
 
@@ -285,7 +311,7 @@ section:nth-of-type(4){
     
 
 section:nth-of-type(4) img {
-    border-radius: 0.2em;
+    border-radius: 0.3em;
     grid-row-start:1;
     grid-column-start:1;
     grid-column-end:3;
@@ -330,6 +356,11 @@ section:nth-of-type(4) a {
 
 }
 
+@media (width > 1024px) { 
+    section:nth-of-type(4)  {
+        margin: 0;
+    }
+}
 /*********************/
 /******SECTION 5******/
 /*********************/
@@ -338,8 +369,9 @@ section:nth-of-type(5){
     background-color:var(--color-background-lightgreen);
     display: flex;
     flex-direction: column;
-    border-radius: 0.2em;
+    border-radius: 0.3em;
     font-family: "Starbucks";
+    margin: 1em;
 
 }
 
@@ -351,7 +383,7 @@ section:nth-of-type(5){
     
 
 section:nth-of-type(5) img {
-    border-radius: 0.2em;
+    border-radius: 0.3em;
     grid-row-start:1;
     grid-column-start:1;
     grid-column-end:3;
@@ -394,6 +426,11 @@ section:nth-of-type(5) a {
     grid-row-start:4;
 }
 
+@media (width > 1024px) { 
+    section:nth-of-type(5)  {
+        margin: 0;
+    }
+}
 /*********************/
 /******SECTION 6******/
 /*********************/
@@ -402,8 +439,9 @@ section:nth-of-type(6){
     background-color:var(--color-background-grey);
     display: flex;
     flex-direction: column;
-    border-radius: 0.2em;
+    border-radius: 0.3em;
     font-family: "Starbucks";
+    margin: 1em;
 
 }
 
@@ -415,7 +453,7 @@ section:nth-of-type(6){
     
 
 section:nth-of-type(6) img {
-    border-radius: 0.2em;
+    border-radius: 0.3em;
     grid-row-start:1;
     grid-column-start:1;
     grid-column-end:3;
@@ -460,7 +498,11 @@ section:nth-of-type(6) a {
 
 
 }
-
+@media (width > 1024px) { 
+    section:nth-of-type(6)  {
+        margin: 0;
+    }
+}
 /*********************/
 /******SECTION 7******/
 /*********************/
@@ -469,9 +511,9 @@ section:nth-of-type(7){
     background-color:var(--color-background-green);
     display: flex;
     flex-direction: column;
-    border-radius: 0.2em;
+    border-radius: 0.3em;
     font-family: "Starbucks";
-    width: 100%;/* dit snap ik niet helemaal */
+    margin: 1em;
     grid-column: 1 / -1;/* dit snap ik niet helemaal */
 
 }
@@ -483,7 +525,7 @@ section:nth-of-type(7){
     
 
 section:nth-of-type(7) img {
-    border-radius: 0.2em;
+    border-radius: 0.3em;
     grid-row-start:1;
     grid-column-start:1;
     grid-column-end:3;
@@ -524,4 +566,58 @@ section:nth-of-type(7) a {
     margin-bottom: 4em;
     font-size: 0.7em;
     grid-row-start:4;
+}
+
+/* @media (width > 1024px) { 
+    section:nth-of-type(7)  {
+        display: grid;
+        grid-template-columns:16em 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    section:nth-of-type(7) h1 {
+        align-self: end;
+        justify-self: start;
+
+    }
+    section:nth-of-type(7) a {
+        align-self: start;
+        justify-self: start;
+
+    }
+    section:nth-of-type(7) img {
+        grid-column-start: 2;
+        grid-row-start: 1;
+        grid-row-end: 5;
+    }
+} */
+
+@media (width > 1024px) { 
+    section:nth-of-type(7)  {
+        display: grid;
+        grid-template-columns:16em 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    section:nth-of-type(7) h1 {
+        grid-row-start:1;
+
+
+    }
+    section:nth-of-type(7) a {
+        align-self: start;
+        justify-self: start;
+
+    }
+    section:nth-of-type(7) p {
+        grid-row-start: 3;
+        justify-self: start;
+        align-self: start;
+    }
+
+    section:nth-of-type(7) img {
+        grid-column-start: 2;
+        grid-row-start:1;
+        grid-row-end:5;
+    }
 }
