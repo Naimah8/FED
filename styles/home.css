@@ -1,49 +1,10 @@
 /* main van home */
 
 
-/**************/
-/* CSS REMEDY */
-/**************/
-*, *::after, *::before {
-	box-sizing:border-box;  
-	
-  }
-  @font-face {
-	font-family: "Starbucks";
-	src: url(../fonts/49f6eaa3630c71e3-s.p.woff);
-    font-weight: 700;
-    /* dikke */
-  }
-
-  @font-face {
-	font-family: "Starbucks";
-	src: url(../fonts/564f79e771d74376-s.p.woff2);
-    font-weight: 350;
-    /* dunne*/
-  }
-
-  @font-face {
-	font-family: "Starbucks";
-	src: url(../fonts/6aebdeb6fff3abca-s.p.woff);
-    font-weight: 600;
-    /* half*/
-  }
-
-  @font-face {
-	font-family: "Starbucks";
-	src: url(../fonts/fb96a0656cdf22e3-s.p.woff);
-    font-weight: 400;
-    /* normaal*/
-  }
-  @font-face {
-	font-family: "Starbucks raar";
-	src: url(../fonts/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBHMdazQ.woff2);
-    /* rare*/
-  }
-
 
   html {
     font-family: "Starbucks";
+
   }
 
 
@@ -52,15 +13,15 @@
     padding:0;
     list-style-type:"";
     display:grid;
-    grid-template-columns:1fr;;
-    background-color: var(--color-background-white);
+    grid-template-columns:1fr;
+    background-color: var(--main-background-primary);
     /* background-image:linear-gradient(180deg in hsl, #590202, #971717, #b92424); */
   }
 
   @media (min-width: 1024px) { 
     main {
       grid-template-columns: repeat(2, 1fr);
-      padding: 4em;
+      padding: 5em;
       gap:1em;
     }
   }
@@ -72,7 +33,7 @@
 /*********************/
 
 section:nth-of-type(1) { 
-	background-color:var(--color-background-green);
+	background-color:var(--section-background-tertairy);
 	display: flex;
     flex-direction: column;
     gap: 1em;
@@ -85,7 +46,7 @@ section:nth-of-type(1) {
 
   section:nth-of-type(1) h1 {
 	font-family: "Starbucks";
-	color: var(--color-text-white);
+	color: var(--text-secondary);
 	font-size: 0.8em;
     margin-left: 1.5em;
     margin-top: 2em;
@@ -93,13 +54,13 @@ section:nth-of-type(1) {
   }
 
   section:nth-of-type(1) a {
-	background: var(--color-button-white);
+	background-color: var(--button-primary);
 	border-radius: 10em;
 	font-size: 70%;
     text-align: center;
 	font-family: "Starbucks";
-	text-decoration: none; /* snap ik niet zo goed */
-	color: var(--color-text-black);
+	text-decoration-line: none;
+	color: var(--text-primary);
     font-weight: 600;
     padding: 0.8em;
     margin: 0.7em;
@@ -122,16 +83,19 @@ section:nth-of-type(1) {
         grid-template-rows: 1fr 1fr;
         border-radius:0.5em;
 
+
     }
 
     section:nth-of-type(1) h1 {
         align-self: end;
         justify-self: start;
+        font-size: 1em;
 
     }
     section:nth-of-type(1) a {
         align-self: start;
         justify-self: start;
+        margin-left: 1.5em;
 
     }
     section:nth-of-type(1) img {
@@ -147,7 +111,7 @@ section:nth-of-type(1) {
 /*********************/
 
 section:nth-of-type(2){
-    background-color:var(--color-background-grey);
+    background-color:var(--section-background-primary);
     display: flex;
     flex-direction: column;
     border-radius: 0.3em;
@@ -179,7 +143,7 @@ section:nth-of-type(2) h2 {
     font-weight: 400;
     margin-left: 1.1em;
     margin-bottom: 0;
-    color: var(--color-text-black);
+    color: var(--text-primary);
     grid-row-start:2;
 
 }
@@ -188,18 +152,18 @@ section:nth-of-type(2) p {
     text-align: left;
     margin: 2em;
     margin-top: 1em;
-    color: var(--color-text-black);
+    color: var(--text-primary);
     font-size: 0.6em;
     font-weight: 350;
     grid-row-start:3;
 
 }
 section:nth-of-type(2) a {
-    background-color: var(--color-button-green);
+    background-color: var(--button-secondary);
     border-radius: 5em;
     text-align: center;
-    color: var(--color-text-white);
-    text-decoration: none;
+    color: var(--text-secondary);
+    text-decoration-line: none;
     padding: 0.78em;
     margin-left: 2em;
     margin-right: 2em;
@@ -222,7 +186,7 @@ section:nth-of-type(2) a {
 /*********************/
 
 section:nth-of-type(3){
-    background-color:var(--color-background-lightgreen);
+    background-color:var(--section-background-secondary);
     display: flex;
     flex-direction: column;
     border-radius: 0.3em;
@@ -253,7 +217,7 @@ section:nth-of-type(3) h2 {
     font-weight: 400;
     margin-left: 1.1em;
     margin-bottom: 0;
-    color: var(--color-text-white);
+    color: var(--text-secondary);
     grid-row-start:2;
 
 }
@@ -262,18 +226,18 @@ section:nth-of-type(3) p {
     text-align: left;
     margin: 2em;
     margin-top: 1em;
-    color: var(--color-text-white);
+    color: var(--text-secondary);
     font-size: 0.6em;
     font-weight: 350;
     grid-row-start:3;
 
 }
 section:nth-of-type(3) a {
-    background-color: var(--color-button-white);
+    background-color: var(--button-primary);
     border-radius: 5em;
     text-align: center;
-    color: var(--color-text-black);
-    text-decoration: none;
+    color: var(--text-primary);
+    text-decoration-line: none;
     padding: 0.78em;
     margin-left: 2em;
     margin-right: 2em;
@@ -281,6 +245,7 @@ section:nth-of-type(3) a {
     font-size: 0.7em;
     grid-row-start:4;
 }
+  
 
 @media (width > 1024px) { 
     section:nth-of-type(3)  {
@@ -294,7 +259,7 @@ section:nth-of-type(3) a {
 /*********************/
 
 section:nth-of-type(4){
-    background-color:var(--color-background-grey);
+    background-color:var(--section-background-primary);
     display: flex;
     flex-direction: column;
     border-radius: 0.3em;
@@ -325,7 +290,7 @@ section:nth-of-type(4) h2 {
     font-weight: 400;
     margin-left: 1.1em;
     margin-bottom: 0;
-    color: var(--color-text-black);
+    color: var(--text-primary);
     grid-row-start:2;
 
 }
@@ -334,18 +299,18 @@ section:nth-of-type(4) p {
     text-align: left;
     margin: 2em;
     margin-top: 1em;
-    color: var(--color-text-black);
+    color: var(--text-primary);
     font-size: 0.6em;
     font-weight: 350;
     grid-row-start:3;
 
 }
 section:nth-of-type(4) a {
-    background-color: var(--color-button-green);
+    background-color: var(--button-secondary);
     border-radius: 5em;
     text-align: center;
-    color: var(--color-text-white);
-    text-decoration: none;
+    color: var(--text-secondary);
+    text-decoration-line: none;
     padding: 0.78em;
     margin-left: 2em;
     margin-right: 2em;
@@ -366,7 +331,7 @@ section:nth-of-type(4) a {
 /*********************/
 
 section:nth-of-type(5){
-    background-color:var(--color-background-lightgreen);
+    background-color:var(--section-background-secondary);
     display: flex;
     flex-direction: column;
     border-radius: 0.3em;
@@ -397,7 +362,7 @@ section:nth-of-type(5) h2 {
     font-weight: 400;
     margin-left: 1.1em;
     margin-bottom: 0;
-    color: var(--color-text-white);
+    color: var(--text-secondary);
     grid-row-start:2;
 
 }
@@ -406,18 +371,18 @@ section:nth-of-type(5) p {
     text-align: left;
     margin: 2em;
     margin-top: 1em;
-    color: var(--color-text-white);
+    color: var(--text-secondary);
     font-size: 0.6em;
     font-weight: 350;
     grid-row-start:3;
 
 }
 section:nth-of-type(5) a {
-    background-color: var(--color-button-white);
+    background-color: var(--button-primary);
     border-radius: 5em;
     text-align: center;
-    color: var(--color-text-black);
-    text-decoration: none;
+    color: var(--text-primary);
+    text-decoration-line: none;
     padding: 0.78em;
     margin-left: 2em;
     margin-right: 2em;
@@ -436,7 +401,7 @@ section:nth-of-type(5) a {
 /*********************/
 
 section:nth-of-type(6){
-    background-color:var(--color-background-grey);
+    background-color:var(--section-background-primary);
     display: flex;
     flex-direction: column;
     border-radius: 0.3em;
@@ -467,7 +432,7 @@ section:nth-of-type(6) h2 {
     margin-bottom: 0;
     font-size: 1em;
     font-weight: 400;
-    color: var(--color-text-black);
+    color: var(--text-primary);
     grid-row-start:2;
 
 
@@ -477,18 +442,18 @@ section:nth-of-type(6) p {
     text-align: left;
     margin: 2em;
     margin-top: 1em;
-    color: var(--color-text-black);
+    color: var(--text-primary);
     font-size: 0.6em;
     font-weight: 350;
     grid-row-start:3;
 
 }
 section:nth-of-type(6) a {
-    background-color: var(--color-button-green);
+    background-color: var(--button-secondary);
     border-radius: 5em;
     text-align: center;
-    color: var(--color-text-white);
-    text-decoration: none;
+    color: var(--text-secondary);
+    text-decoration-line: none;
     padding: 0.78em;
     margin-left: 2em;
     margin-right: 2em;
@@ -508,7 +473,7 @@ section:nth-of-type(6) a {
 /*********************/
 
 section:nth-of-type(7){
-    background-color:var(--color-background-green);
+    background-color:var(--section-background-tertairy);
     display: flex;
     flex-direction: column;
     border-radius: 0.3em;
@@ -529,6 +494,7 @@ section:nth-of-type(7) img {
     grid-row-start:1;
     grid-column-start:1;
     grid-column-end:3;
+    object-fit: cover;
 
 
 
@@ -539,7 +505,7 @@ section:nth-of-type(7) h2 {
     font-weight: 400;
     margin-left: 1.1em;
     margin-bottom: 0;
-    color: var(--color-text-white);
+    color: var(--text-secondary);
     grid-row-start:2;
 
 }
@@ -548,18 +514,19 @@ section:nth-of-type(7) p {
     text-align: left;
     margin: 2em;
     margin-top: 1em;
-    color: var(--color-text-white);
+    color: var(--text-secondary);
     font-size: 0.6em;
     font-weight: 350;
     grid-row-start:3;
 
 }
+
 section:nth-of-type(7) a {
-    background-color: var(--color-button-white);
+    background-color: var(--button-primary);
     border-radius: 5em;
     text-align: center;
-    color: var(--color-text-black);
-    text-decoration: none;
+    color: var(--text-primary);
+    text-decoration-line: none;
     padding: 0.78em;
     margin-left: 2em;
     margin-right: 2em;
@@ -568,35 +535,13 @@ section:nth-of-type(7) a {
     grid-row-start:4;
 }
 
-/* @media (width > 1024px) { 
-    section:nth-of-type(7)  {
-        display: grid;
-        grid-template-columns:16em 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-    }
-
-    section:nth-of-type(7) h1 {
-        align-self: end;
-        justify-self: start;
-
-    }
-    section:nth-of-type(7) a {
-        align-self: start;
-        justify-self: start;
-
-    }
-    section:nth-of-type(7) img {
-        grid-column-start: 2;
-        grid-row-start: 1;
-        grid-row-end: 5;
-    }
-} */
 
 @media (width > 1024px) { 
     section:nth-of-type(7)  {
         display: grid;
         grid-template-columns:16em 1fr;
         grid-template-rows: 1fr 1fr 1fr;
+        margin: 0;
     }
 
     section:nth-of-type(7) h1 {
@@ -619,5 +564,10 @@ section:nth-of-type(7) a {
         grid-column-start: 2;
         grid-row-start:1;
         grid-row-end:5;
+        width: 100%;
+        height: 100%;
+        max-height: 100%;
+        object-fit: cover;
+        object-position: center;
     }
 }
